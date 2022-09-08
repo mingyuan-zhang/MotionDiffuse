@@ -6,7 +6,7 @@
     <a href='https://scholar.google.com/citations?user=2QLD4fAAAAAJ&hl=en' target='_blank'>Mingyuan Zhang</a><sup>1</sup>*&emsp;
     <a href='https://caizhongang.github.io/' target='_blank'>Zhongang Cai</a><sup>1,2</sup>*&emsp;
     <a href='https://scholar.google.com/citations?user=lSDISOcAAAAJ&hl=zh-CN' target='_blank'>Liang Pan</a><sup>1</sup>&emsp;
-    <a href='https://hongfz16.github.io/' target='_blank'>Fangzhou Hong</a><sup>1</sup>*&emsp;
+    <a href='https://hongfz16.github.io/' target='_blank'>Fangzhou Hong</a><sup>1</sup>&emsp;
     <a href='https://github.com/gxyes/gxyes.github.io' target='_blank'>Xinying Guo</a><sup>1</sup>&emsp;
     <a href='https://yanglei.me/' target='_blank'>Lei Yang</a><sup>2</sup>&emsp;
     <a href='https://liuziwei7.github.io/' target='_blank'>Ziwei Liu</a><sup>1+</sup>
