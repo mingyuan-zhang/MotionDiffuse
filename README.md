@@ -7,7 +7,7 @@
     <a href='https://caizhongang.github.io/' target='_blank'>Zhongang Cai</a><sup>1,2</sup>*&emsp;
     <a href='https://scholar.google.com/citations?user=lSDISOcAAAAJ&hl=zh-CN' target='_blank'>Liang Pan</a><sup>1</sup>&emsp;
     <a href='https://hongfz16.github.io/' target='_blank'>Fangzhou Hong</a><sup>1</sup>&emsp;
-    <a href='https://github.com/gxyes/gxyes.github.io' target='_blank'>Xinying Guo</a><sup>1</sup>&emsp;
+    <a href='https://gxyes.github.io/' target='_blank'>Xinying Guo</a><sup>1</sup>&emsp;
     <a href='https://yanglei.me/' target='_blank'>Lei Yang</a><sup>2</sup>&emsp;
     <a href='https://liuziwei7.github.io/' target='_blank'>Ziwei Liu</a><sup>1+</sup>
 </div>
@@ -47,5 +47,28 @@ This repository contains the official implementation of _MotionDiffuse: Text-Dri
 
 </div>
 
-The code will be available soon.
 
+## Update
+
+[10/2022] Code release for text-driven motion generation!
+
+## Citation
+
+If you find our work useful for your research, please consider citing the paper:
+
+```
+@article{zhang2022motiondiffuse,
+  title={MotionDiffuse: Text-Driven Human Motion Generation with Diffusion Model},
+  author={Zhang, Mingyuan and Cai, Zhongang and Pan, Liang and Hong, Fangzhou and Guo, Xinying and Yang, Lei and Liu, Ziwei},
+  journal={arXiv preprint arXiv:2208.15001},
+  year={2022}
+}
+```
+
+## Text-driven Motion Generation
+
+You may refer to [readme](text2motion/README.md) for detailed introduction.
+
+## Acknowledgements
+
+This study is supported by NTU NAP, MOE AcRF Tier 2 (T2EP20221-0033), and under the RIE2020 Industry Alignment Fund – Industry Collaboration Projects (IAF-ICP) Funding Initiative, as well as cash and in-kind contribution from the industry partner(s).
