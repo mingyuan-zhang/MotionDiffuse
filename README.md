@@ -52,6 +52,10 @@ This repository contains the official implementation of _MotionDiffuse: Text-Dri
 
 [10/2022] Code release for text-driven motion generation!
 
+## Text-driven Motion Generation
+
+You may refer to [readme](text2motion/README.md) for detailed introduction.
+
 ## Citation
 
 If you find our work useful for your research, please consider citing the paper:
@@ -64,10 +68,6 @@ If you find our work useful for your research, please consider citing the paper:
   year={2022}
 }
 ```
-
-## Text-driven Motion Generation
-
-You may refer to [readme](text2motion/README.md) for detailed introduction.
 
 ## Acknowledgements
 

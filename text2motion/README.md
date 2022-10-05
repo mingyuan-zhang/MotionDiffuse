@@ -49,6 +49,42 @@ python -u tools/evaluation.py checkpoints/kit/kit_motiondiffuse/opt.txt GPU_ID
 python -u tools/evaluation.py checkpoints/kit/kit_motiondiffuse/opt.txt
 ```
 
+## Visualization
+
+You can visualize human motion with the given language description and the expected motion length.
+
+```shell
+# Currently we only support visualization of models trained on the HumanML3D dataset. 
+# Motion length can not be larger than 196, which is the maximum length during training
+# You can omit `gpu_id` to run visualization on your CPU
+
+python -u tools/visualization.py \
+    --opt_path checkpoints/t2m/t2m_motiondiffuse/opt.txt \
+    --text "a person is jumping" \
+    --motion_length 60 \
+    --result_path "test_sample.gif" \
+    --gpu_id 0
+```
+
+Here are some visualization examples. The motion lengths are shown in the title of animations.
+
+<table>
+<tr>
+    <td><img src="../figures/gallery_t2m/gen_00.gif" width="100%"/></td>
+    <td><img src="../figures/gallery_t2m/gen_01.gif" width="100%"/></td>
+    <td><img src="../figures/gallery_t2m/gen_02.gif" width="100%"/></td>
+    <td><img src="../figures/gallery_t2m/gen_03.gif" width="100%"/></td>
+</tr>
+<tr>
+    <td><img src="../figures/gallery_t2m/gen_04.gif" width="100%"/></td>
+    <td><img src="../figures/gallery_t2m/gen_05.gif" width="100%"/></td>
+    <td><img src="../figures/gallery_t2m/gen_06.gif" width="100%"/></td>
+    <td><img src="../figures/gallery_t2m/gen_07.gif" width="100%"/></td>
+</tr>
+</table>
+
+**Note:** You may install `matplotlib==3.3.1` to support visualization here.
+
 ## Acknowledgement
 
 This code is developed on top of [Generating Diverse and Natural 3D Human Motions from Text](https://github.com/EricGuo5513/text-to-motion)
