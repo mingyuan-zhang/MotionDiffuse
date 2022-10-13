@@ -43,7 +43,8 @@ This repository contains the official implementation of _MotionDiffuse: Text-Dri
   <a href="https://mingyuan-zhang.github.io/projects/MotionDiffuse.html" target='_blank'>[Project Page]</a> •
   <a href="https://arxiv.org/abs/2208.15001" target='_blank'>[arXiv]</a> •
   <a href="https://youtu.be/U5PTnw490SA" target='_blank'>[Video]</a> •
-  <a href="https://colab.research.google.com/drive/1Dp6VsZp2ozKuu9ccMmsDjyij_vXfCYb3?usp=sharing" target='_blank'>[Colab Demo]</a>
+  <a href="https://colab.research.google.com/drive/1Dp6VsZp2ozKuu9ccMmsDjyij_vXfCYb3?usp=sharing" target='_blank'>[Colab Demo]</a> •
+  <a href="https://huggingface.co/spaces/mingyuan/MotionDiffuse" target='_blank'>[Hugging Face Demo]</a>
 </h4>
 
 </div>
