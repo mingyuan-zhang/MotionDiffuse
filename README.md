@@ -51,6 +51,8 @@ This repository contains the official implementation of _MotionDiffuse: Text-Dri
 
 ## Updates
 
+[10/2022] Add a [🤗Hugging Face Demo](https://huggingface.co/spaces/mingyuan/MotionDiffuse) for text-driven motion generation!
+
 [10/2022] Add a [Colab Demo](https://colab.research.google.com/drive/1Dp6VsZp2ozKuu9ccMmsDjyij_vXfCYb3?usp=sharing) for text-driven motion generation! [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Dp6VsZp2ozKuu9ccMmsDjyij_vXfCYb3?usp=sharing)
 
 [10/2022] Code release for text-driven motion generation!

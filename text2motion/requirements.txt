@@ -1,6 +1,5 @@
 tqdm
 opencv-python
-clip
 scipy
 matplotlib==3.3.1
 spacy
