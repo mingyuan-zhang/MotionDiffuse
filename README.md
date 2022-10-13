@@ -51,13 +51,15 @@ This repository contains the official implementation of _MotionDiffuse: Text-Dri
 
 ## Updates
 
-[10/2022] Add a [Colab Demo](https://colab.research.google.com/drive/1Dp6VsZp2ozKuu9ccMmsDjyij_vXfCYb3?usp=sharing) for text-driven motion generation! [![Open In Colab](https://colab.research.google.com/drive/1Dp6VsZp2ozKuu9ccMmsDjyij_vXfCYb3?usp=sharing)](https://colab.research.google.com/drive/1dfaecX7xF3nP6fyXc8XBljV5QY1lc1TR?usp=sharing)
+[10/2022] Add a [Colab Demo](https://colab.research.google.com/drive/1Dp6VsZp2ozKuu9ccMmsDjyij_vXfCYb3?usp=sharing) for text-driven motion generation! [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dfaecX7xF3nP6fyXc8XBljV5QY1lc1TR?usp=sharing)
 
 [10/2022] Code release for text-driven motion generation!
 
+[8/2022] [Paper](https://arxiv.org/abs/2208.15001) uploaded to arXiv. [![arXiv](https://img.shields.io/badge/arXiv-2208.15001-b31b1b.svg)](https://arxiv.org/abs/2208.15001)
+
 ## Text-driven Motion Generation
 
-You may refer to [readme](text2motion/README.md) for detailed introduction.
+You may refer to [this file](text2motion/README.md) for detailed introduction.
 
 ## Citation
 
