@@ -42,13 +42,16 @@ This repository contains the official implementation of _MotionDiffuse: Text-Dri
 <h4 align="center">
   <a href="https://mingyuan-zhang.github.io/projects/MotionDiffuse.html" target='_blank'>[Project Page]</a> •
   <a href="https://arxiv.org/abs/2208.15001" target='_blank'>[arXiv]</a> •
-  <a href="https://youtu.be/U5PTnw490SA" target='_blank'>[Video]</a>
+  <a href="https://youtu.be/U5PTnw490SA" target='_blank'>[Video]</a> •
+  <a href="https://colab.research.google.com/drive/1Dp6VsZp2ozKuu9ccMmsDjyij_vXfCYb3?usp=sharing" target='_blank'>[Colab Demo]</a>
 </h4>
 
 </div>
 
 
-## Update
+## Updates
+
+[10/2022] Add a [Colab Demo](https://colab.research.google.com/drive/1Dp6VsZp2ozKuu9ccMmsDjyij_vXfCYb3?usp=sharing) for text-driven motion generation! [![Open In Colab](https://colab.research.google.com/drive/1Dp6VsZp2ozKuu9ccMmsDjyij_vXfCYb3?usp=sharing)](https://colab.research.google.com/drive/1dfaecX7xF3nP6fyXc8XBljV5QY1lc1TR?usp=sharing)
 
 [10/2022] Code release for text-driven motion generation!
 

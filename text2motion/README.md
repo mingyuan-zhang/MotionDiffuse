@@ -51,7 +51,7 @@ python -u tools/evaluation.py checkpoints/kit/kit_motiondiffuse/opt.txt
 
 ## Visualization
 
-You can visualize human motion with the given language description and the expected motion length.
+You can visualize human motion with the given language description and the expected motion length. We also provide a [colab script](https://colab.research.google.com/drive/1Dp6VsZp2ozKuu9ccMmsDjyij_vXfCYb3?usp=sharing) for your convenience.
 
 ```shell
 # Currently we only support visualization of models trained on the HumanML3D dataset. 

@@ -60,8 +60,7 @@ if __name__ == '__main__':
     mean = np.load(pjoin(opt.meta_dir, 'mean.npy'))
     std = np.load(pjoin(opt.meta_dir, 'std.npy'))
 
-    w_vectorizer = WordVectorizer('./data/glove', 'our_vab')
-    encoder = build_models(opt).cuda()
+    encoder = build_models(opt).to(device)
     trainer = DDPMTrainer(opt, encoder)
     trainer.load(pjoin(opt.model_dir, opt.which_epoch + '.tar'))
 
