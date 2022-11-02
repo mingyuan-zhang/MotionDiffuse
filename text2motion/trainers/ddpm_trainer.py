@@ -190,7 +190,9 @@ class DDPMTrainer(object):
             samples_per_gpu=self.opt.batch_size,
             drop_last=True,
             workers_per_gpu=4,
-            shuffle=True)
+            shuffle=True,
+            dist=self.opt.distributed,
+            num_gpus=len(self.opt.gpu_id))
 
         logs = OrderedDict()
         for epoch in range(cur_epoch, self.opt.num_epochs):

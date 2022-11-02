@@ -15,7 +15,7 @@ class TrainCompOptions(BaseOptions):
         self.parser.add_argument('--batch_size', type=int, default=32, help='Batch size per GPU')
         self.parser.add_argument('--times', type=int, default=1, help='times of dataset')
 
-        self.parser.add_argument('--feat_bias', type=float, default=5, help='Scales for global motion features and foot contact')
+        self.parser.add_argument('--feat_bias', type=float, default=25, help='Scales for global motion features and foot contact')
 
         self.parser.add_argument('--is_continue', action="store_true", help='Is this trail continued from previous trail?')
 

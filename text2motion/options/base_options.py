@@ -1,7 +1,7 @@
 import argparse
 import os
 import torch
-from mmcv.runner import get_dist_info
+from mmcv.runner import init_dist, get_dist_info
 import torch.distributed as dist
 
 
@@ -14,8 +14,9 @@ class BaseOptions():
         self.parser.add_argument('--name', type=str, default="test", help='Name of this trial')
         self.parser.add_argument('--decomp_name', type=str, default="Decomp_SP001_SM001_H512", help='Name of autoencoder model')
 
-        self.parser.add_argument("--gpu_id", type=int, default=-1, help='GPU id')
-        self.parser.add_argument("--distributed", action="store_true", help='Weather to use DDP training')
+        self.parser.add_argument("--gpu_id", type=int, nargs='+', default=(-1), help='GPU id')
+        self.parser.add_argument("--distributed", action="store_true", help='Whether to use DDP training')
+        self.parser.add_argument("--data_parallel", action="store_true", help="Whether to use DP training")
 
         self.parser.add_argument('--dataset_name', type=str, default='t2m', help='Dataset Name')
         self.parser.add_argument('--checkpoints_dir', type=str, default='./checkpoints', help='models are saved here')
@@ -56,15 +57,18 @@ class BaseOptions():
 
         self.opt.is_train = self.is_train
 
-        if self.opt.gpu_id != -1:
-            # self.opt.gpu_id = int(self.opt.gpu_id)
-            torch.cuda.set_device(self.opt.gpu_id)
-
         args = vars(self.opt)
-
         if args["distributed"]:
             init_dist('slurm')
         rank, world_size = get_dist_info()
+        if args["distributed"]:
+            self.opt.gpu_id = range(world_size)
+        elif self.opt.gpu_id != (-1):
+            if len(self.opt.gpu_id) == 1:
+                torch.cuda.set_device(self.opt.gpu_id[0])
+        else:
+            assert args["data_parallel"] == False
+
         if rank == 0:
             print('------------ Options -------------')
             for k, v in sorted(args.items()):

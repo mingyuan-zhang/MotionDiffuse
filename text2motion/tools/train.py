@@ -10,7 +10,7 @@ from trainers import DDPMTrainer
 from datasets import Text2MotionDataset
 
 from mmcv.runner import get_dist_info, init_dist
-from mmcv.parallel import MMDistributedDataParallel
+from mmcv.parallel import MMDistributedDataParallel, MMDataParallel
 import torch
 import torch.distributed as dist
 
@@ -81,6 +81,9 @@ if __name__ == '__main__':
             device_ids=[torch.cuda.current_device()],
             broadcast_buffers=False,
             find_unused_parameters=True)
+    elif opt.data_parallel:
+        encoder = MMDataParallel(
+            encoder.cuda(opt.gpu_id[0]), device_ids=opt.gpu_id)
     else:
         encoder = encoder.cuda()
 

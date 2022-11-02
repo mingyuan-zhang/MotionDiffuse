@@ -20,12 +20,28 @@ Due to the requirement of a large batchsize, we highly recommend you to use DDP 
 PYTHONPATH="$(dirname $0)/..":$PYTHONPATH \
 srun -p ${PARTITION} -n8 --gres=gpu:8 -u \
     python -u tools/train.py \
-    --name t2m_sample \
+    --name kit_baseline_ddp_8gpu_8layers_1000 \
     --batch_size 128 \
     --times 200 \
     --num_epochs 50 \
-    --dataset_name t2m \
+    --dataset_name kit \
     --distributed
+```
+
+Besides, you can train the model on multi-GPUs with DataParallel:
+
+```shell
+PYTHONPATH="$(dirname $0)/..":$PYTHONPATH \
+    python -u tools/train.py \
+    --name kit_baseline_dp_2gpu_8layers_1000 \
+    --batch_size 128 \
+    --times 50 \
+    --num_epochs 50 \
+    --dataset_name kit \
+    --num_layers 8 \
+    --diffusion_steps 1000 \
+    --data_parallel \
+    --gpu_id 0 1
 ```
 
 Otherwise, you can run the training code on a single GPU like:
@@ -33,12 +49,14 @@ Otherwise, you can run the training code on a single GPU like:
 ```shell
 PYTHONPATH="$(dirname $0)/..":$PYTHONPATH \
 python -u tools/train.py \
-    --name t2m_sample \
+    --name kit_baseline_1gpu_8layers_1000 \
     --batch_size 128 \
-    --times 200 \
+    --times 25 \
     --num_epochs 50 \
-    --dataset_name t2m
+    --dataset_name kit
 ```
+
+Here, `times` means the duplication times of the original dataset. To retain the number of iterations, you can set `times` to 25 for 1 GPU, 50 for 2 GPUs, 100 for 4 GPUs, and 200 for 8 GPUs.
 
 ## Evaluation
 

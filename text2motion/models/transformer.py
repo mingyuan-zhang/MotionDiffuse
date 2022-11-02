@@ -409,6 +409,9 @@ class MotionTransformer(nn.Module):
         x: B, T, D
         """
         B, T = x.shape[0], x.shape[1]
+        if text is not None and len(text) != B:
+            index = x.device.index
+            text = text[index * B: index * B + B]
         if xf_proj is None or xf_out is None:
             xf_proj, xf_out = self.encode_text(text, x.device)
 
