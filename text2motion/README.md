@@ -75,12 +75,14 @@ You can visualize human motion with the given language description and the expec
 # Currently we only support visualization of models trained on the HumanML3D dataset. 
 # Motion length can not be larger than 196, which is the maximum length during training
 # You can omit `gpu_id` to run visualization on your CPU
+# Optionally, you can store the xyz coordinates of each joint to `npy_path`. The shape of motion data is (T, 22, 3), where T denotes the motion length, 22 is the number of joints.
 
 python -u tools/visualization.py \
     --opt_path checkpoints/t2m/t2m_motiondiffuse/opt.txt \
     --text "a person is jumping" \
     --motion_length 60 \
     --result_path "test_sample.gif" \
+    --npy_path "test_sample.npy" \
     --gpu_id 0
 ```
 
